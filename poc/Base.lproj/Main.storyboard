@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-rg-SAb">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="btK-ah-gqv">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1zl-CE-adE"/>
+                                    <constraint firstItem="btK-ah-gqv" firstAttribute="centerX" secondItem="iEu-rg-SAb" secondAttribute="centerX" id="2YA-XH-l8O"/>
+                                    <constraint firstAttribute="bottom" secondItem="btK-ah-gqv" secondAttribute="bottom" id="55k-Nt-6qw"/>
+                                    <constraint firstAttribute="width" constant="200" id="D9q-GV-Yxu"/>
+                                    <constraint firstAttribute="trailing" secondItem="btK-ah-gqv" secondAttribute="trailing" id="GlK-Tw-EJb"/>
+                                    <constraint firstItem="btK-ah-gqv" firstAttribute="top" secondItem="iEu-rg-SAb" secondAttribute="top" id="MJ0-Mk-UyI"/>
+                                    <constraint firstItem="btK-ah-gqv" firstAttribute="bottom" secondItem="jtm-Cv-x5R" secondAttribute="bottom" id="b7P-kF-H60"/>
+                                    <constraint firstItem="btK-ah-gqv" firstAttribute="leading" secondItem="iEu-rg-SAb" secondAttribute="leading" id="lmM-Bh-2Gw"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ogL-V0-zdq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="jtm-Cv-x5R"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-Ma-mY0">
+                                <rect key="frame" x="136" y="483" width="48" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="run">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="runPOC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sIY-ne-Whv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="b2f-Ma-mY0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FgR-5g-624"/>
+                            <constraint firstItem="iEu-rg-SAb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kcg-Vf-Mn5"/>
+                            <constraint firstItem="iEu-rg-SAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Klb-yb-mOO"/>
+                            <constraint firstItem="b2f-Ma-mY0" firstAttribute="top" secondItem="iEu-rg-SAb" secondAttribute="bottom" constant="99" id="rNa-kH-fEt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logview" destination="btK-ah-gqv" id="gN5-0c-zTx"/>
+                        <outlet property="runButton" destination="b2f-Ma-mY0" id="X0v-zO-5QT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="105.63380281690141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

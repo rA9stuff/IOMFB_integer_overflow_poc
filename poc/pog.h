@@ -1,8 +1,8 @@
 //
-//  poc.h
-//  iomfb_poc
+//  pog.h
+//  poc14.7.1
 //
-//  Created by Saar Amar.
+//  Created by barisc on 13.10.2021.
 //
 
 #ifndef poc_h

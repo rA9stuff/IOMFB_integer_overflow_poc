@@ -1,12 +1,14 @@
 //
-//  poc.c
-//  iomfb_poc
+//  pog.m
+//  poc14.7.1
 //
-//  Created by Saar Amar.
+//  Created by barisc on 13.10.2021.
 //
 
-#include "poc.h"
-extern char *out;
+#import <Foundation/Foundation.h>
+#import "ViewController.h"
+#include "pog.h"
+NSString *outlog = @"";
 
 io_connect_t get_iomfb_uc(void) {
     kern_return_t ret;
